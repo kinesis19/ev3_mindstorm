@@ -32,5 +32,5 @@ ev3 = EV3Brick()
 # Motor(Port.C).run_time(500, 2000)
 
 # Motor_Ctrl -- 3.th
-Motor(Port.A).run_target(500, 360, Stop.BRAKE, False) # 파워가 약해도, 입력 된 각도만큼 끝까지 수행함.
+Motor(Port.A).run_target(500, 360, Stop.BRAKE, True) # 파워가 약해도, 입력 된 각도만큼 끝까지 수행함.
 Motor(Port.C).run_angle(500, 360)
