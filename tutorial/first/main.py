@@ -6,6 +6,7 @@ from pybricks.parameters import Port, Stop, Direction, Button, Color
 from pybricks.tools import wait, StopWatch, DataLog
 from pybricks.robotics import DriveBase
 from pybricks.media.ev3dev import SoundFile, ImageFile
+from time import sleep
 
 
 # This program requires LEGO EV3 MicroPython v2.0 or higher.
@@ -20,4 +21,8 @@ ev3 = EV3Brick()
 ev3.speaker.beep()
 Motor(Port.A).run(500) 
 Motor(Port.C).run(500)
-wait(1000)
+sleep(2)
+
+Motor(Port.A).Stop(Stop.BREAKE)
+Motor(Port.D).Stop(Stop.HOLD)
+sleep(0.5)
