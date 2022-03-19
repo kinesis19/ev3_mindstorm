@@ -18,6 +18,6 @@ ev3 = EV3Brick()
 
 # Write your program here.
 ev3.speaker.beep()
-Motor(Port.A).run(500) #프로그램은 순차적 구조인데, ev3 모터 2개를 동시에 움직이게 하려면 어떻게 해야 할까?
+Motor(Port.A).run(500) 
 Motor(Port.C).run(500)
 wait(1000)
