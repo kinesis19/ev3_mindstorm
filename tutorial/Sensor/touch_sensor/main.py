@@ -15,9 +15,11 @@ from time import sleep
 # Create your objects here.
 ev3 = EV3Brick()
 
-
 # Write your program here.
 ev3.speaker.beep()
 
-while True:
+Motor(Port.A).run(500)
+
+while TouchSensor(Port.S1).pressed() == 0:
     
+    wait(100)
